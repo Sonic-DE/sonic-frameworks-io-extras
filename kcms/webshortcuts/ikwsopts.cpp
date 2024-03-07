@@ -127,6 +127,14 @@ QVariant ProvidersModel::data(const QModelIndex &index, int role) const
         }
     }
 
+    if (role == Qt::UserRole + 1) { // for sorting
+        if (index.column() == Preferred) {
+            return (data(index, Qt::CheckStateRole));
+        } else {
+            return (data(index, Qt::DisplayRole));
+        }
+    }
+
     if (role == Qt::UserRole) {
         return index.row(); // a nice way to bypass proxymodel
     }
