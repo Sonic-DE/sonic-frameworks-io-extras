@@ -125,28 +125,6 @@ QVariant ProvidersModel::data(const QModelIndex &index, int role) const
         } else {
             return (data(index, Qt::DisplayRole));
         }
-        else if (index.column() == Name) {
-            // Show the top level domain used for the query.  Use string
-            // functions instead of trying to construct a URL, because the
-            // query substitutions may not be valid in a URL path.
-            QString q(m_providers.at(index.row())->query());
-            int idx1 = q.indexOf(QLatin1String("://"));
-            if (idx1 != -1) {
-                idx1 += 3;
-                int idx2 = q.indexOf(QLatin1Char('/'), idx1);
-                if (idx2 != -1) {
-                    return (q.mid(idx1, idx2 - idx1));
-                }
-            }
-        }
-    }
-
-    if (role == Qt::UserRole + 1) { // for sorting
-        if (index.column() == Preferred) {
-            return (data(index, Qt::CheckStateRole));
-        } else {
-            return (data(index, Qt::DisplayRole));
-        }
     }
 
     if (role == Qt::UserRole) {
@@ -243,7 +221,7 @@ QVariant ProvidersListModel::data(const QModelIndex &index, int role) const
     switch (role) {
     case Qt::DisplayRole:
         if (noProvider) {
-            return i18nc("@item:inlistbox No default web search keyword", "None");
+            return i18nc("@item:inlistbox No default web search keyword", "(None)");
         }
         return m_providers.at(index.row())->name();
     case ShortNameRole:
@@ -316,14 +294,14 @@ FilterOptions::FilterOptions(QObject *parent, const KPluginMetaData &data)
     connect(m_dlg.searchLineEdit, &QLineEdit::textEdited, searchProviderModel, &QSortFilterProxyModel::setFilterFixedString);
 
     connect(m_dlg.lbQuickHelp, &QLabel::linkActivated, this, [this](const QString &link) {
-        QToolTip::showText(QCursor::pos(),
-                           xi18nc("@info:whatsthis",
-                                  "<para>Web search keywords allow you to quickly search or look up words on the Internet. "
-                                  "They work in Plasma's <application>KRunner</application> search, "
-                                  "<application>Konqueror</application>'s address bar, and in any other "
-                                  "applications that support them. For example, to search for information "
-                                  "about the KDE project using the Google search engine, you can simply type "
-                                  "<icode>gg:KDE</icode> or <icode>google:KDE</icode>.</para>"));
+        QToolTip::showText(QCursor::pos(), xi18nc("@info:whatsthis",
+                                                  "<para>Here you can configure the web search keywords feature.</para>"
+                                                  "<para>Web search keywords allow you to quickly search or look up words on "
+                                                  "the Internet. They work in <application>Konqueror</application>'s address "
+                                                  "bar, the <application>KRunner</application> search, and in any other "
+                                                  "applications that support them. For example, to search for information "
+                                                  "about the KDE project using the Google search engine, you can simply type "
+                                                  "<icode>gg:KDE</icode> or <icode>google:KDE</icode>.</para>"));
     });
 }
 
@@ -521,3 +499,4 @@ K_PLUGIN_CLASS_WITH_JSON(FilterOptions, "kcm_webshortcuts.json")
 #include "moc_ikwsopts.cpp"
 
 #include "moc_ikwsopts_p.cpp"
+
