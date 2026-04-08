@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio5\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-30 00:44+0000\n"
+"POT-Creation-Date: 2025-11-17 11:51+0000\n"
 "PO-Revision-Date: 2023-06-03 21:00+0200\n"
 "Last-Translator: Ferdinand Galko <galko.ferdinand@gmail.com>\n"
 "Language-Team: Slovak <opensuse-translation@opensuse.org>\n"
@@ -66,12 +66,18 @@ msgstr ""
 "Počas posielania je prípona súboru \".part\". Až po dokončení prenosu sa "
 "premenuje na skutočné meno."
 
+#. i18n: ectx: label, entry (MinimumKeepSize), group (&lt;default&gt;)
+#: netpref/kioslave.kcfg:17
+#, kde-format
+msgid "The minimum file size for keeping aborted downloads"
+msgstr "Minimálna veľkosť súboru na zachovanie prerušených sťahovaní"
+
 #: netpref/netpref.cpp:26
 #, kde-format
 msgid "Global Options"
 msgstr "Globálne možnosti"
 
-#: netpref/netpref.cpp:31 netpref/netpref.cpp:65
+#: netpref/netpref.cpp:31 netpref/netpref.cpp:70
 #, kde-format
 msgid "Mark &partially uploaded files"
 msgstr "O&značiť čiastočne nahrané súbory"
@@ -88,17 +94,34 @@ msgstr ""
 "je táto voľba zapnutá, čiastočne nahrané súbory budú mať príponu \".part\". "
 "Táto prípona bude odstránená, keď bude prenos ukončený.</p>"
 
-#: netpref/netpref.cpp:51
+#: netpref/netpref.cpp:52
+#, kde-format
+msgctxt "@label:spinbox"
+msgid "%v byte"
+msgid_plural "%v bytes"
+msgstr[0] " bajt"
+msgstr[1] " bajty"
+msgstr[2] " bajtov"
+
+#: netpref/netpref.cpp:54
+#, kde-format
+msgctxt "@label:spinbox"
+msgid ""
+"If cancelled, automatically delete partially uploaded files smaller than:"
+msgstr ""
+"Ak je zrušené, automaticky odstrániť čiastočne nahrané súbory menšie ako:"
+
+#: netpref/netpref.cpp:56
 #, kde-format
 msgid "FTP Options"
 msgstr "Možnosti FTP"
 
-#: netpref/netpref.cpp:57
+#: netpref/netpref.cpp:62
 #, kde-format
 msgid "Enable passive &mode (PASV)"
 msgstr "Povoliť pasívny &mód (PASV)"
 
-#: netpref/netpref.cpp:59
+#: netpref/netpref.cpp:64
 #, kde-format
 msgid ""
 "Enables FTP's \"passive\" mode. This is required to allow FTP to work from "
@@ -107,7 +130,7 @@ msgstr ""
 "Povolí \"pasívne\" FTP. Toto je požadované pre správnu funckiu FTP spoza "
 "firewallu."
 
-#: netpref/netpref.cpp:67
+#: netpref/netpref.cpp:72
 #, kde-format
 msgid ""
 "<p>Marks partially uploaded FTP files.</p><p>When this option is enabled, "
@@ -500,7 +523,7 @@ msgid "Show the &value of the environment variables"
 msgstr "Zobraziť prednastavené premenné &prostredia"
 
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, autoDiscoverProxyRadioButton)
-#: proxy/kproxydlg.ui:602
+#: proxy/kproxydlg.ui:600
 #, kde-format
 msgid ""
 "<qt>\n"
@@ -520,33 +543,19 @@ msgstr ""
 "</qt>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, autoDiscoverProxyRadioButton)
-#: proxy/kproxydlg.ui:605
+#: proxy/kproxydlg.ui:603
 #, kde-format
 msgid "&Detect proxy configuration automatically"
 msgstr "Automaticky zistiť nastavenia proxy"
 
-#. i18n: ectx: property (contextualHelpText), widget (KContextualHelpButton, wpadHelpButton)
-#: proxy/kproxydlg.ui:615
-#, kde-format
-msgid ""
-"Automatic Configuration, also known as Web Proxy Auto-Discovery (WPAD), is "
-"almost never the correct configuration. Enabling it when it is not required "
-"may slow down network access and make your network less secure. Your network "
-"administrator will know whether enabling it is required."
-msgstr ""
-"Automatická konfigurácia, známa aj ako Web Proxy Auto-Discovery (WPAD), "
-"takmer nikdy nie je správnou konfiguráciou. Jej zapnutie, keď nie je "
-"potrebné, môže spomaliť prístup k sieti a znížiť jej bezpečnosť. Váš správca "
-"siete bude vedieť, či je jej zapnutie potrebné."
-
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, proxyScriptUrlRequester)
-#: proxy/kproxydlg.ui:661
+#: proxy/kproxydlg.ui:634
 #, kde-format
 msgid "Enter the address for the proxy configuration script."
 msgstr "Zadajte adresu skriptu pre nastavenie proxy serveru."
 
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, systemProxyRadioButton)
-#: proxy/kproxydlg.ui:685
+#: proxy/kproxydlg.ui:658
 #, kde-format
 msgid ""
 "<qt><p>Use proxy settings defined on the system.</p>\n"
@@ -572,10 +581,24 @@ msgstr ""
 "</qt>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, systemProxyRadioButton)
-#: proxy/kproxydlg.ui:688
+#: proxy/kproxydlg.ui:661
 #, kde-format
 msgid "Use s&ystem proxy configuration:"
 msgstr "Použiť systémové nastavenie proxy:"
+
+#. i18n: ectx: property (contextualHelpText), widget (KContextualHelpButton, wpadHelpButton)
+#: proxy/kproxydlg.ui:673
+#, kde-format
+msgid ""
+"Automatic Configuration, also known as Web Proxy Auto-Discovery (WPAD), is "
+"almost never the correct configuration. Enabling it when it is not required "
+"may slow down network access and make your network less secure. Your network "
+"administrator will know whether enabling it is required."
+msgstr ""
+"Automatická konfigurácia, známa aj ako Web Proxy Auto-Discovery (WPAD), "
+"takmer nikdy nie je správnou konfiguráciou. Jej zapnutie, keď nie je "
+"potrebné, môže spomaliť prístup k sieti a znížiť jej bezpečnosť. Váš správca "
+"siete bude vedieť, či je jej zapnutie potrebné."
 
 #: proxy/wpad-detector/module.cpp:75
 #, kde-format
@@ -746,19 +769,19 @@ msgstr ""
 msgid "Full trash:"
 msgstr "Plný kôš:"
 
-#: webshortcuts/ikwsopts.cpp:42
+#: webshortcuts/ikwsopts.cpp:41
 #, kde-format
 msgctxt "@title:column Name label from web search keyword column"
 msgid "Name"
 msgstr "Názov"
 
-#: webshortcuts/ikwsopts.cpp:44
+#: webshortcuts/ikwsopts.cpp:43
 #, kde-format
 msgctxt "@title:column"
 msgid "Keywords"
 msgstr "Kľúčové slová"
 
-#: webshortcuts/ikwsopts.cpp:46
+#: webshortcuts/ikwsopts.cpp:45
 #, kde-format
 msgctxt "@title:column"
 msgid "Preferred"
@@ -767,50 +790,47 @@ msgstr "Preferované"
 #: webshortcuts/ikwsopts.cpp:104
 #, kde-kuit-format
 msgctxt "@info:tooltip"
-msgid "Check to select this web search keyword as preferred."
+msgid ""
+"Check this box to select the highlighted Web search keyword as preferred.<nl/"
+">Preferred Web search keywords are used in places where only a few select "
+"keywords can be shown at one time."
 msgstr ""
-"Začiarknite na zvolenie tohto kľúčového slova vyhľadávania na webe ako "
-"preferovaného."
+"Začiarknite toto políčko, ak chcete vybrať zvýraznené kľúčové slovo "
+"vyhľadávania na webe ako preferované.<nl/>Preferované kľúčové slová "
+"vyhľadávania na webe sa používajú na miestach, kde sa môže naraz zobraziť "
+"len niekoľko vybraných kľúčových slov."
 
-#: webshortcuts/ikwsopts.cpp:224
+#: webshortcuts/ikwsopts.cpp:205
 #, kde-format
 msgctxt "@item:inlistbox No default web search keyword"
 msgid "None"
 msgstr "Žiadne"
 
-#: webshortcuts/ikwsopts.cpp:269
+#: webshortcuts/ikwsopts.cpp:249
 #, kde-format
 msgid "Search F&ilters"
 msgstr "Vyhľadávacie &filtre"
-
-#: webshortcuts/ikwsopts.cpp:299
-#, kde-kuit-format
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Web search keywords allow you to quickly search or look up words on "
-"the Internet. They work in Plasma's <application>KRunner</application> "
-"search, <application>Konqueror</application>'s address bar, and in any other "
-"applications that support them. For example, to search for information about "
-"the KDE project using the Google search engine, you can simply type "
-"<icode>gg:KDE</icode> or <icode>google:KDE</icode>.</para>"
-msgstr ""
-"<para>Kľúčové slová vyhľadávania na webe vám umožňujú rýchlo vyhľadávať "
-"alebo dohľadávať slová na internete. Fungujú vo vyhľadávaní "
-"<application>KRunner</application> v Plasme, v paneli adresy aplikácie "
-"<application>Konqueror</application> a v akýchkoľvek iných aplikáciách, "
-"ktoré ich podporujú. Napríklad na vyhľadanie informácií o projekte KDE "
-"pomocou vyhľadávača Google môžete jednoducho napísať <icode>gg:KDE</icode> "
-"alebo <icode>google:KDE</icode>.</para>"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbEnableShortcuts)
 #: webshortcuts/ikwsopts_ui.ui:17
 #, kde-format
 msgid ""
-"Check to recognise and use the web search keywords in applications that can "
-"use them"
+"<html><head/><body><p>Enable or disable Web search keywords. </p><p>Web "
+"search keywords allow you to quickly access or search for information "
+"located online or on your hard drive. </p><p>KDE comes with many predefined "
+"keywords. One such keyword can be used to perform a the Google (TM) search; "
+"to use it, you simply type the keyword 'gg' followed by the keyword "
+"delimiter and the search term, e.g. <span style=\" font-weight:600;\">gg:"
+"KDE</span>.</p></body></html>"
 msgstr ""
-"Začiarknite na rozpoznávanie a používanie kľúčových slov vyhľadávania na "
-"webe v aplikáciách, ktoré ich vedia použiť"
+"<html><head/><body><p>Povolenie alebo zakázanie kľúčových slov vyhľadávania "
+"na webe. </p><p>Kľúčové slová vyhľadávania na webe umožňujú rýchly prístup "
+"alebo vyhľadávanie informácií umiestnených online alebo na pevnom disku.  </"
+"p><p>Prostredie KDE obsahuje mnoho preddefinovaných kľúčových slov. Jedno z "
+"takýchto kľúčových slov možno použiť na vyhľadávanie v Google (TM); stačí "
+"zadať kľúčové slovo \"gg\", za ktorým nasleduje oddeľovač kľúčových slov a "
+"hľadaný výraz, napr. <span style=\" font-weight:600;\">gg:KDE</span>.</p></"
+"body></html>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbEnableShortcuts)
 #: webshortcuts/ikwsopts_ui.ui:20
@@ -818,122 +838,124 @@ msgstr ""
 msgid "&Enable Web search keywords"
 msgstr "Povoliť webové skratky"
 
-#. i18n: ectx: property (text), widget (QLabel, lbQuickHelp)
-#: webshortcuts/ikwsopts_ui.ui:36
-#, kde-format
-msgid "<a href=\"whatsthis\">How do these work?</a>"
-msgstr "<a href=\"whatsthis\">Ako to funguje?</a>"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, cbUseSelectedShortcutsOnly)
-#: webshortcuts/ikwsopts_ui.ui:52
-#, kde-format
-msgid ""
-"<p>Check to only use the preferred web search keywords, as selected in the "
-"list below, where necessary.</p><p>If this is checked, then applications "
-"that can only show a limited number of search keywords (for example, "
-"Konqueror when text on a page is selected) will only show the preferred "
-"keywords.</p>"
-msgstr ""
-"<p>Začiarknite, aby sa v prípade potreby používali iba preferované kľúčové "
-"slová vyhľadávania na webe, ako sú vybraté v zozname nižšie.</p><p>Ak je "
-"toto začiarknuté, aplikácie, ktoré dokážu zobraziť iba obmedzený počet "
-"kľúčových slov vyhľadávania (napríklad Konqueror, keď je vybratý text na "
-"stránke), zobrazia iba preferované kľúčové slová.</p>"
-
 #. i18n: ectx: property (text), widget (QCheckBox, cbUseSelectedShortcutsOnly)
-#: webshortcuts/ikwsopts_ui.ui:55
+#: webshortcuts/ikwsopts_ui.ui:30
 #, kde-format
 msgid "&Use preferred keywords only"
 msgstr "Použiť iba preferované skratky"
 
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, searchLineEdit)
-#: webshortcuts/ikwsopts_ui.ui:62
+#: webshortcuts/ikwsopts_ui.ui:37
 #, kde-format
-msgid "Search..."
-msgstr "Hľadať..."
+msgid "Search for Web search keywords"
+msgstr "Hľadať kľúčové slová na webe"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, pbNew)
-#: webshortcuts/ikwsopts_ui.ui:96
+#: webshortcuts/ikwsopts_ui.ui:71
 #, kde-format
 msgid "Add a new Web search keyword"
 msgstr "Pridať nové kľúčové slovo pre vyhľadávanie na webe"
 
 #. i18n: ectx: property (text), widget (QPushButton, pbNew)
-#: webshortcuts/ikwsopts_ui.ui:99
+#: webshortcuts/ikwsopts_ui.ui:74
 #, kde-format
 msgid "&New…"
 msgstr "&Nový…"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, pbChange)
-#: webshortcuts/ikwsopts_ui.ui:109
+#: webshortcuts/ikwsopts_ui.ui:84
 #, kde-format
 msgid "Modify the highlighted Web search keyword"
 msgstr "Upravte zvýraznené kľúčové slovo vyhľadávania na webe"
 
 #. i18n: ectx: property (text), widget (QPushButton, pbChange)
-#: webshortcuts/ikwsopts_ui.ui:112
+#: webshortcuts/ikwsopts_ui.ui:87
 #, kde-format
 msgid "Ed&it…"
 msgstr "Upr&aviť…"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, pbDelete)
-#: webshortcuts/ikwsopts_ui.ui:122
+#: webshortcuts/ikwsopts_ui.ui:97
 #, kde-format
 msgid "Delete the highlighted Web search keyword"
 msgstr "Odstrániť zvýraznené kľúčové slovo vyhľadávania na webe"
 
 #. i18n: ectx: property (text), widget (QPushButton, pbDelete)
-#: webshortcuts/ikwsopts_ui.ui:125
+#: webshortcuts/ikwsopts_ui.ui:100
 #, kde-format
 msgid "De&lete"
 msgstr "Ods&trániť"
 
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbDefaultEngine)
+#: webshortcuts/ikwsopts_ui.ui:138
+#, kde-format
+msgid ""
+"<qt>\n"
+"Select the search engine to use for input boxes that provide automatic "
+"lookup services when you type in normal words and phrases instead of a URL. "
+"To disable this feature select <b>None</b> from the list.\n"
+"</qt>"
+msgstr ""
+"<qt>\n"
+"Vyberte vyhľadávací nástroj, ktorý sa má používať pre vstupné polia, ktoré "
+"poskytujú automatické hľadanie pri zadaní normálnych slov a fráz namiesto "
+"URL. Ak chcete túto funkciu vypnúť, použite voľbu <b>Žiadny</b>.\n"
+"</qt>"
+
 #. i18n: ectx: property (text), widget (QLabel, lbDefaultEngine)
-#: webshortcuts/ikwsopts_ui.ui:161
+#: webshortcuts/ikwsopts_ui.ui:141
 #, kde-format
 msgid "Default Web &search keyword:"
 msgstr "Predvolené kľúčové slovo pre vyhľadávanie na webe:"
 
-#. i18n: ectx: property (toolTip), widget (QComboBox, cmbDefaultEngine)
-#: webshortcuts/ikwsopts_ui.ui:186
+#. i18n: ectx: property (whatsThis), widget (QComboBox, cmbDefaultEngine)
+#: webshortcuts/ikwsopts_ui.ui:166
 #, kde-format
 msgid ""
-"<p>Select a default web search keyword.</p><p>This may be used by "
-"applications which automatically search if input cannot be recognised, for "
-"example in Konqueror's address bar.  This keyword will be used for the "
-"search. To disable this feature select <tt>(None)</tt> from the list.</p>"
+"<html><head/><body><p>Select a default Web search keyword. </p><p>This "
+"allows applications to automatically convert the typed word or phrase to Web "
+"search keyword queries when they cannot be filtered into a proper URL. </"
+"p><p>To disable this functionality select <span style=\" font-weight:600;"
+"\">None</span> from the list. </p></body></html>"
 msgstr ""
-"<p>Vyberte predvolené kľúčové slovo vyhľadávania na webe.</p><p>Toto môžu "
-"používať aplikácie, ktoré automaticky vyhľadávajú, ak sa vstup nedá "
-"rozpoznať, napríklad v paneli adresy aplikácie Konqueror. Toto kľúčové slovo "
-"sa použije na vyhľadávanie. Na vypnutie tejto funkcie vyberte zo zoznamu "
-"<tt>(Žiadne)</tt>.</p>"
+"<html><head/><body><p>Vyberte predvolené kľúčové slovo vyhľadávania na webe. "
+"</p><p>To umožňuje aplikáciám automaticky konvertovať napísané slovo alebo "
+"frázu na dopyty kľúčových slov vyhľadávania na webe, ak ich nie je možné "
+"odfiltrovať na správnu adresu URL. </p><p>Ak chcete túto funkciu zakázať, "
+"vyberte <span style=\" font-weight:600;\">Žiadne</span> zo zoznamu. </p></"
+"body></html>"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbDelimiter)
+#: webshortcuts/ikwsopts_ui.ui:182
+#, kde-format
+msgid ""
+"Choose the delimiter that separates the keyword from the phrase or word to "
+"be searched."
+msgstr ""
+"Vyberte znak, ktorý oddeľuje kľúčové slová od fráz alebo slov, ktoré sa majú "
+"nájsť."
 
 #. i18n: ectx: property (text), widget (QLabel, lbDelimiter)
-#: webshortcuts/ikwsopts_ui.ui:202
+#: webshortcuts/ikwsopts_ui.ui:185
 #, kde-format
 msgid "&Keyword delimiter:"
 msgstr "O&ddeľovací znak kľúčových slov:"
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, cmbDelimiter)
-#: webshortcuts/ikwsopts_ui.ui:221
+#: webshortcuts/ikwsopts_ui.ui:204
 #, kde-format
-msgid ""
-"Choose the delimiter to separate the keyword from the phrase or word to be "
-"searched."
-msgstr ""
-"Vyberte oddeľovač na oddelenie kľúčového slova od frázy alebo slova, ktoré "
-"sa má vyhľadať."
+msgid "Choose a delimiter to mark the Web search keyword."
+msgstr "Zvoľte oddeľovač na označenie kľúčového slova webového vyhľadávania."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbDelimiter)
-#: webshortcuts/ikwsopts_ui.ui:225
+#: webshortcuts/ikwsopts_ui.ui:208
 #, kde-format
 msgctxt "Colon as keyword delimiter"
 msgid "Colon"
 msgstr "Dvojbodka"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbDelimiter)
-#: webshortcuts/ikwsopts_ui.ui:230
+#: webshortcuts/ikwsopts_ui.ui:213
 #, kde-format
 msgctxt "Space as keyword delimiter"
 msgid "Space"
@@ -1096,7 +1118,7 @@ msgstr ""
 #: webshortcuts/searchproviderdlg_ui.ui:119
 #, kde-format
 msgid "&Keywords:"
-msgstr "&Kľúčové slová:"
+msgstr "Kľúčové slová"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbCharset)
 #: webshortcuts/searchproviderdlg_ui.ui:132
@@ -1115,82 +1137,6 @@ msgstr "Z&naková sada:"
 #, kde-format
 msgid "Insert query placeholder"
 msgstr "Vložiť zástupný znak dotazu"
-
-#~ msgctxt "@info:tooltip"
-#~ msgid ""
-#~ "Check this box to select the highlighted Web search keyword as preferred."
-#~ "<nl/>Preferred Web search keywords are used in places where only a few "
-#~ "select keywords can be shown at one time."
-#~ msgstr ""
-#~ "Začiarknite toto políčko, ak chcete vybrať zvýraznené kľúčové slovo "
-#~ "vyhľadávania na webe ako preferované.<nl/>Preferované kľúčové slová "
-#~ "vyhľadávania na webe sa používajú na miestach, kde sa môže naraz zobraziť "
-#~ "len niekoľko vybraných kľúčových slov."
-
-#~ msgid ""
-#~ "<html><head/><body><p>Enable or disable Web search keywords. </p><p>Web "
-#~ "search keywords allow you to quickly access or search for information "
-#~ "located online or on your hard drive. </p><p>KDE comes with many "
-#~ "predefined keywords. One such keyword can be used to perform a the Google "
-#~ "(TM) search; to use it, you simply type the keyword 'gg' followed by the "
-#~ "keyword delimiter and the search term, e.g. <span style=\" font-"
-#~ "weight:600;\">gg:KDE</span>.</p></body></html>"
-#~ msgstr ""
-#~ "<html><head/><body><p>Povolenie alebo zakázanie kľúčových slov "
-#~ "vyhľadávania na webe. </p><p>Kľúčové slová vyhľadávania na webe umožňujú "
-#~ "rýchly prístup alebo vyhľadávanie informácií umiestnených online alebo na "
-#~ "pevnom disku.  </p><p>Prostredie KDE obsahuje mnoho preddefinovaných "
-#~ "kľúčových slov. Jedno z takýchto kľúčových slov možno použiť na "
-#~ "vyhľadávanie v Google (TM); stačí zadať kľúčové slovo \"gg\", za ktorým "
-#~ "nasleduje oddeľovač kľúčových slov a hľadaný výraz, napr. <span style=\" "
-#~ "font-weight:600;\">gg:KDE</span>.</p></body></html>"
-
-#~ msgid "Search for Web search keywords"
-#~ msgstr "Hľadať kľúčové slová na webe"
-
-#~ msgid ""
-#~ "<qt>\n"
-#~ "Select the search engine to use for input boxes that provide automatic "
-#~ "lookup services when you type in normal words and phrases instead of a "
-#~ "URL. To disable this feature select <b>None</b> from the list.\n"
-#~ "</qt>"
-#~ msgstr ""
-#~ "<qt>\n"
-#~ "Vyberte vyhľadávací nástroj, ktorý sa má používať pre vstupné polia, "
-#~ "ktoré poskytujú automatické hľadanie pri zadaní normálnych slov a fráz "
-#~ "namiesto URL. Ak chcete túto funkciu vypnúť, použite voľbu <b>Žiadny</"
-#~ "b>.\n"
-#~ "</qt>"
-
-#~ msgid ""
-#~ "<html><head/><body><p>Select a default Web search keyword. </p><p>This "
-#~ "allows applications to automatically convert the typed word or phrase to "
-#~ "Web search keyword queries when they cannot be filtered into a proper "
-#~ "URL. </p><p>To disable this functionality select <span style=\" font-"
-#~ "weight:600;\">None</span> from the list. </p></body></html>"
-#~ msgstr ""
-#~ "<html><head/><body><p>Vyberte predvolené kľúčové slovo vyhľadávania na "
-#~ "webe. </p><p>To umožňuje aplikáciám automaticky konvertovať napísané "
-#~ "slovo alebo frázu na dopyty kľúčových slov vyhľadávania na webe, ak ich "
-#~ "nie je možné odfiltrovať na správnu adresu URL. </p><p>Ak chcete túto "
-#~ "funkciu zakázať, vyberte <span style=\" font-weight:600;\">Žiadne</span> "
-#~ "zo zoznamu. </p></body></html>"
-
-#~ msgid "The minimum file size for keeping aborted downloads"
-#~ msgstr "Minimálna veľkosť súboru na zachovanie prerušených sťahovaní"
-
-#~ msgctxt "@label:spinbox"
-#~ msgid "%v byte"
-#~ msgid_plural "%v bytes"
-#~ msgstr[0] " bajt"
-#~ msgstr[1] " bajty"
-#~ msgstr[2] " bajtov"
-
-#~ msgctxt "@label:spinbox"
-#~ msgid ""
-#~ "If cancelled, automatically delete partially uploaded files smaller than:"
-#~ msgstr ""
-#~ "Ak je zrušené, automaticky odstrániť čiastočne nahrané súbory menšie ako:"
 
 #~ msgid " days"
 #~ msgstr " dní"
@@ -1529,6 +1475,9 @@ msgstr "Vložiť zástupný znak dotazu"
 
 #~ msgid "Search interactively for domains"
 #~ msgstr "Interaktívne hľadanie domén"
+
+#~ msgid "Search..."
+#~ msgstr "Hľadať..."
 
 #~ msgid ""
 #~ "<qt>\n"
