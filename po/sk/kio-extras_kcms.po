@@ -1006,9 +1006,9 @@ msgid ""
 "This means that the same page is always going to be visited, regardless of "
 "the text typed in with the keyword."
 msgstr ""
-"URL neobsahuje zástupný symbol %1 pre dopyt používateľa.\n"
-"To znamená, že sa vždy navštívi rovnaká stránka, bez ohľadu na text zadaný s "
-"kľúčovým slovom."
+"The URL does not contain a %1 placeholder for the user query.\n"
+"This means that rovnaký page is always going to be visited, bez ohľadu na "
+"the text typed in with the keyword."
 
 #: webshortcuts/searchproviderdlg.cpp:147
 #, kde-format
@@ -1118,7 +1118,7 @@ msgstr ""
 #: webshortcuts/searchproviderdlg_ui.ui:119
 #, kde-format
 msgid "&Keywords:"
-msgstr "Kľúčové slová"
+msgstr "&Kľúčové slová:"
 
 #. i18n: ectx: property (whatsThis), widget (QLabel, lbCharset)
 #: webshortcuts/searchproviderdlg_ui.ui:132
