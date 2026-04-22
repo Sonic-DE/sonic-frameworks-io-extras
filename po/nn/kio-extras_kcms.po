@@ -8,15 +8,15 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-30 00:44+0000\n"
-"PO-Revision-Date: 2026-06-22 19:01+0200\n"
+"POT-Creation-Date: 2025-11-17 11:51+0000\n"
+"PO-Revision-Date: 2026-04-21 19:18+0200\n"
 "Last-Translator: Karl Ove Hufthammer <karl@huftis.org>\n"
-"Language-Team: Norwegian Nynorsk <l10n-no@nuug.no>\n"
+"Language-Team: Norwegian Nynorsk <l10n-no@lister.huftis.org>\n"
 "Language: nn\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 26.07.70\n"
+"X-Generator: Lokalize 25.12.3\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
 "X-Environment: kde\n"
 "X-Accelerator-Marker: &\n"
@@ -70,12 +70,18 @@ msgstr ""
 "Når ei fil vert lasta opp, har ho etternamnet «*.part». Når opplastinga er "
 "ferdig, får ho sitt eigentlege namn."
 
+#. i18n: ectx: label, entry (MinimumKeepSize), group (&lt;default&gt;)
+#: netpref/kioslave.kcfg:17
+#, kde-format
+msgid "The minimum file size for keeping aborted downloads"
+msgstr "Minste filstorleik for å behalda avbrotne nedlastingar"
+
 #: netpref/netpref.cpp:26
 #, kde-format
 msgid "Global Options"
 msgstr "Globale val"
 
-#: netpref/netpref.cpp:31 netpref/netpref.cpp:65
+#: netpref/netpref.cpp:31 netpref/netpref.cpp:70
 #, kde-format
 msgid "Mark &partially uploaded files"
 msgstr "Marker &delvis opplasta filer"
@@ -92,17 +98,32 @@ msgstr ""
 "<p>Når denne funksjonen er på, får delvis opplasta filer etternamnet «."
 "part». Etternamnet vert fjerna så snart overføringa er ferdig.</p>"
 
-#: netpref/netpref.cpp:51
+#: netpref/netpref.cpp:52
+#, kde-format
+msgctxt "@label:spinbox"
+msgid "%v byte"
+msgid_plural "%v bytes"
+msgstr[0] "%v byte"
+msgstr[1] "%v byte"
+
+#: netpref/netpref.cpp:54
+#, kde-format
+msgctxt "@label:spinbox"
+msgid ""
+"If cancelled, automatically delete partially uploaded files smaller than:"
+msgstr "Ved avbrot, slett automatisk delvis opplasta filer som er mindre enn:"
+
+#: netpref/netpref.cpp:56
 #, kde-format
 msgid "FTP Options"
 msgstr "FTP-val"
 
-#: netpref/netpref.cpp:57
+#: netpref/netpref.cpp:62
 #, kde-format
 msgid "Enable passive &mode (PASV)"
 msgstr "Bruk &passivmodus (PASV)"
 
-#: netpref/netpref.cpp:59
+#: netpref/netpref.cpp:64
 #, kde-format
 msgid ""
 "Enables FTP's \"passive\" mode. This is required to allow FTP to work from "
@@ -111,7 +132,7 @@ msgstr ""
 "Slår på «passiv» FTP-modus. Det trengst ofte for at FTP skal verka gjennom "
 "brannmurar."
 
-#: netpref/netpref.cpp:67
+#: netpref/netpref.cpp:72
 #, kde-format
 msgid ""
 "<p>Marks partially uploaded FTP files.</p><p>When this option is enabled, "
@@ -495,7 +516,7 @@ msgid "Show the &value of the environment variables"
 msgstr "Vis verdiane til tilhøyrande &miljøvariablar"
 
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, autoDiscoverProxyRadioButton)
-#: proxy/kproxydlg.ui:602
+#: proxy/kproxydlg.ui:600
 #, kde-format
 msgid ""
 "<qt>\n"
@@ -514,33 +535,19 @@ msgstr ""
 "</qt>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, autoDiscoverProxyRadioButton)
-#: proxy/kproxydlg.ui:605
+#: proxy/kproxydlg.ui:603
 #, kde-format
 msgid "&Detect proxy configuration automatically"
 msgstr "&Finn automatisk mellomtenaroppsett"
 
-#. i18n: ectx: property (contextualHelpText), widget (KContextualHelpButton, wpadHelpButton)
-#: proxy/kproxydlg.ui:615
-#, kde-format
-msgid ""
-"Automatic Configuration, also known as Web Proxy Auto-Discovery (WPAD), is "
-"almost never the correct configuration. Enabling it when it is not required "
-"may slow down network access and make your network less secure. Your network "
-"administrator will know whether enabling it is required."
-msgstr ""
-"Automatisk oppsett, òg kalla «Web Proxy Auto-Discovery» (WPAD), er nesten "
-"aldri rett innstiling. Viss du har dette slått på, kan det gjera tilgangen "
-"til nettverket tregare og mindre trygg. Nettverk­ansvarleg veit om det er "
-"nødvendig å bruka denne innstillinga."
-
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, proxyScriptUrlRequester)
-#: proxy/kproxydlg.ui:661
+#: proxy/kproxydlg.ui:634
 #, kde-format
 msgid "Enter the address for the proxy configuration script."
 msgstr "Oppgje adressa til skriptet for mellomtenaroppsett."
 
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, systemProxyRadioButton)
-#: proxy/kproxydlg.ui:685
+#: proxy/kproxydlg.ui:658
 #, kde-format
 msgid ""
 "<qt><p>Use proxy settings defined on the system.</p>\n"
@@ -566,10 +573,24 @@ msgstr ""
 "</qt>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, systemProxyRadioButton)
-#: proxy/kproxydlg.ui:688
+#: proxy/kproxydlg.ui:661
 #, kde-format
 msgid "Use s&ystem proxy configuration:"
 msgstr "Bruk s&ystemoppsett for mellomtenar:"
+
+#. i18n: ectx: property (contextualHelpText), widget (KContextualHelpButton, wpadHelpButton)
+#: proxy/kproxydlg.ui:673
+#, kde-format
+msgid ""
+"Automatic Configuration, also known as Web Proxy Auto-Discovery (WPAD), is "
+"almost never the correct configuration. Enabling it when it is not required "
+"may slow down network access and make your network less secure. Your network "
+"administrator will know whether enabling it is required."
+msgstr ""
+"Automatisk oppsett, òg kalla «Web Proxy Auto-Discovery» (WPAD), er nesten "
+"aldri rett innstiling. Viss du har dette slått på, kan det gjera tilgangen "
+"til nettverket tregare og mindre trygg. Nettverk­ansvarleg veit om det er "
+"nødvendig å bruka denne innstillinga."
 
 #: proxy/wpad-detector/module.cpp:75
 #, kde-format
@@ -745,19 +766,19 @@ msgstr ""
 msgid "Full trash:"
 msgstr "Full papirkorg:"
 
-#: webshortcuts/ikwsopts.cpp:42
+#: webshortcuts/ikwsopts.cpp:41
 #, kde-format
 msgctxt "@title:column Name label from web search keyword column"
 msgid "Name"
 msgstr "Namn"
 
-#: webshortcuts/ikwsopts.cpp:44
+#: webshortcuts/ikwsopts.cpp:43
 #, kde-format
 msgctxt "@title:column"
 msgid "Keywords"
 msgstr "Nøkkelord"
 
-#: webshortcuts/ikwsopts.cpp:46
+#: webshortcuts/ikwsopts.cpp:45
 #, kde-format
 msgctxt "@title:column"
 msgid "Preferred"
@@ -766,39 +787,45 @@ msgstr "Føretrekt"
 #: webshortcuts/ikwsopts.cpp:104
 #, kde-kuit-format
 msgctxt "@info:tooltip"
-msgid "Check to select this web search keyword as preferred."
-msgstr "Kryss av for å markera vevsøk-nøkkelordet som føretrekt."
+msgid ""
+"Check this box to select the highlighted Web search keyword as preferred.<nl/"
+">Preferred Web search keywords are used in places where only a few select "
+"keywords can be shown at one time."
+msgstr ""
+"Kryss av her for å bruka det merkte vevsøk-nøkkelordet som føretrekt.<nl/"
+">Føretrekte nøkkelord vert brukte i situasjonar der berre nokre få utvalde "
+"nøkkelord kan visast samtidig."
 
-#: webshortcuts/ikwsopts.cpp:224
+#: webshortcuts/ikwsopts.cpp:205
 #, kde-format
 msgctxt "@item:inlistbox No default web search keyword"
 msgid "None"
 msgstr "Ingen"
 
-#: webshortcuts/ikwsopts.cpp:269
+#: webshortcuts/ikwsopts.cpp:249
 #, kde-format
 msgid "Search F&ilters"
 msgstr "Søkje&filter"
-
-#: webshortcuts/ikwsopts.cpp:299
-#, kde-kuit-format
-msgctxt "@info:whatsthis"
-msgid ""
-"<para>Web search keywords allow you to quickly search or look up words on "
-"the Internet. They work in Plasma's <application>KRunner</application> "
-"search, <application>Konqueror</application>'s address bar, and in any other "
-"applications that support them. For example, to search for information about "
-"the KDE project using the Google search engine, you can simply type "
-"<icode>gg:KDE</icode> or <icode>google:KDE</icode>.</para>"
-msgstr ""
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbEnableShortcuts)
 #: webshortcuts/ikwsopts_ui.ui:17
 #, kde-format
 msgid ""
-"Check to recognise and use the web search keywords in applications that can "
-"use them"
+"<html><head/><body><p>Enable or disable Web search keywords. </p><p>Web "
+"search keywords allow you to quickly access or search for information "
+"located online or on your hard drive. </p><p>KDE comes with many predefined "
+"keywords. One such keyword can be used to perform a the Google (TM) search; "
+"to use it, you simply type the keyword 'gg' followed by the keyword "
+"delimiter and the search term, e.g. <span style=\" font-weight:600;\">gg:"
+"KDE</span>.</p></body></html>"
 msgstr ""
+"<html><head/><body><p>Slå av eller på vevsøk-nøkkelord.</p><p>Med vevsøk-"
+"nøkkelord kan du raskt få tilgang til eller søkja etter informasjon på "
+"nettverket eller lokal harddisk.</p><p>Systemet kjem med mange "
+"førehandsdefinerte nøkkelord. Eit eksempel er nøkkelordet for Google™. For å "
+"bruka det skriv du ganske enkelt «gg» følgt av skiljeteiknet for nøkkelord "
+"og søkjetekst, for eksempel <span style=\" font-weight:600;\">gg:KDE</span>."
+"</p></body></html>"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbEnableShortcuts)
 #: webshortcuts/ikwsopts_ui.ui:20
@@ -806,112 +833,123 @@ msgstr ""
 msgid "&Enable Web search keywords"
 msgstr "&Bruk nøkkelord for vevsøk"
 
-#. i18n: ectx: property (text), widget (QLabel, lbQuickHelp)
-#: webshortcuts/ikwsopts_ui.ui:36
-#, kde-format
-msgid "<a href=\"whatsthis\">How do these work?</a>"
-msgstr "<a href=\"whatsthis\">Korleis fungerer dette?</a>"
-
-#. i18n: ectx: property (toolTip), widget (QCheckBox, cbUseSelectedShortcutsOnly)
-#: webshortcuts/ikwsopts_ui.ui:52
-#, kde-format
-msgid ""
-"<p>Check to only use the preferred web search keywords, as selected in the "
-"list below, where necessary.</p><p>If this is checked, then applications "
-"that can only show a limited number of search keywords (for example, "
-"Konqueror when text on a page is selected) will only show the preferred "
-"keywords.</p>"
-msgstr ""
-
 #. i18n: ectx: property (text), widget (QCheckBox, cbUseSelectedShortcutsOnly)
-#: webshortcuts/ikwsopts_ui.ui:55
+#: webshortcuts/ikwsopts_ui.ui:30
 #, kde-format
 msgid "&Use preferred keywords only"
 msgstr "&Bruk berre føretrekte nøkkelord"
 
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, searchLineEdit)
-#: webshortcuts/ikwsopts_ui.ui:62
+#: webshortcuts/ikwsopts_ui.ui:37
 #, kde-format
-msgid "Search..."
-msgstr "Søk …"
+msgid "Search for Web search keywords"
+msgstr "Søk etter nøkkelord for vevsøk"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, pbNew)
-#: webshortcuts/ikwsopts_ui.ui:96
+#: webshortcuts/ikwsopts_ui.ui:71
 #, kde-format
 msgid "Add a new Web search keyword"
 msgstr "Legg til nytt nøkkelord for vevsøk"
 
 #. i18n: ectx: property (text), widget (QPushButton, pbNew)
-#: webshortcuts/ikwsopts_ui.ui:99
+#: webshortcuts/ikwsopts_ui.ui:74
 #, kde-format
 msgid "&New…"
 msgstr "&Ny…"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, pbChange)
-#: webshortcuts/ikwsopts_ui.ui:109
+#: webshortcuts/ikwsopts_ui.ui:84
 #, kde-format
 msgid "Modify the highlighted Web search keyword"
 msgstr "Rediger det merkte nøkkelordet for vevsøk"
 
 #. i18n: ectx: property (text), widget (QPushButton, pbChange)
-#: webshortcuts/ikwsopts_ui.ui:112
+#: webshortcuts/ikwsopts_ui.ui:87
 #, kde-format
 msgid "Ed&it…"
 msgstr "&Rediger …"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, pbDelete)
-#: webshortcuts/ikwsopts_ui.ui:122
+#: webshortcuts/ikwsopts_ui.ui:97
 #, kde-format
 msgid "Delete the highlighted Web search keyword"
 msgstr "Slett det merkte nøkkelordet for vevsøk"
 
 #. i18n: ectx: property (text), widget (QPushButton, pbDelete)
-#: webshortcuts/ikwsopts_ui.ui:125
+#: webshortcuts/ikwsopts_ui.ui:100
 #, kde-format
 msgid "De&lete"
 msgstr "Sle&tt"
 
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbDefaultEngine)
+#: webshortcuts/ikwsopts_ui.ui:138
+#, kde-format
+msgid ""
+"<qt>\n"
+"Select the search engine to use for input boxes that provide automatic "
+"lookup services when you type in normal words and phrases instead of a URL. "
+"To disable this feature select <b>None</b> from the list.\n"
+"</qt>"
+msgstr ""
+"<qt>\n"
+"Vel søkjemotoren du vil bruka med skrivefelt som kan søkja automatisk når du "
+"skriv inn vanleg tekst i staden for ei nettadresse. Du kan slå av denne "
+"funksjonen ved å velja <b>Ingen</b> frå lista.\n"
+"</qt>"
+
 #. i18n: ectx: property (text), widget (QLabel, lbDefaultEngine)
-#: webshortcuts/ikwsopts_ui.ui:161
+#: webshortcuts/ikwsopts_ui.ui:141
 #, kde-format
 msgid "Default Web &search keyword:"
 msgstr "Standard &nøkkelordet for vevsøk:"
 
-#. i18n: ectx: property (toolTip), widget (QComboBox, cmbDefaultEngine)
-#: webshortcuts/ikwsopts_ui.ui:186
+#. i18n: ectx: property (whatsThis), widget (QComboBox, cmbDefaultEngine)
+#: webshortcuts/ikwsopts_ui.ui:166
 #, kde-format
 msgid ""
-"<p>Select a default web search keyword.</p><p>This may be used by "
-"applications which automatically search if input cannot be recognised, for "
-"example in Konqueror's address bar.  This keyword will be used for the "
-"search. To disable this feature select <tt>(None)</tt> from the list.</p>"
+"<html><head/><body><p>Select a default Web search keyword. </p><p>This "
+"allows applications to automatically convert the typed word or phrase to Web "
+"search keyword queries when they cannot be filtered into a proper URL. </"
+"p><p>To disable this functionality select <span style=\" font-weight:600;"
+"\">None</span> from the list. </p></body></html>"
 msgstr ""
+"<html><head/><body><p>Vel ein standard nøkkelord for vevsøk.</p><p>Dette lèt "
+"program tolka ord eller uttrykk som nøkkelord for vevsøk dersom dei ikkje "
+"kan tolkast til vanlege nettadresser.</p><p>For å slå av denne funksjonen "
+"vel <span style=\" font-weight:600;\">Ingen</span> frå lista.</p></body></"
+"html>"
+
+#. i18n: ectx: property (whatsThis), widget (QLabel, lbDelimiter)
+#: webshortcuts/ikwsopts_ui.ui:182
+#, kde-format
+msgid ""
+"Choose the delimiter that separates the keyword from the phrase or word to "
+"be searched."
+msgstr ""
+"Vel kva for skiljeteikn som skal brukast mellom nøkkelordet og teksten det "
+"skal søkjast etter."
 
 #. i18n: ectx: property (text), widget (QLabel, lbDelimiter)
-#: webshortcuts/ikwsopts_ui.ui:202
+#: webshortcuts/ikwsopts_ui.ui:185
 #, kde-format
 msgid "&Keyword delimiter:"
 msgstr "S&kiljeteikn for nøkkelord:"
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, cmbDelimiter)
-#: webshortcuts/ikwsopts_ui.ui:221
+#: webshortcuts/ikwsopts_ui.ui:204
 #, kde-format
-msgid ""
-"Choose the delimiter to separate the keyword from the phrase or word to be "
-"searched."
-msgstr ""
-"Vel kva for skiljeteikn som skal brukast mellom nøkkelordet og teksten det "
-"skal søkjast etter."
+msgid "Choose a delimiter to mark the Web search keyword."
+msgstr "Vel skiljeteikn for å markera nøkkelordet for vevsøk."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbDelimiter)
-#: webshortcuts/ikwsopts_ui.ui:225
+#: webshortcuts/ikwsopts_ui.ui:208
 #, kde-format
 msgctxt "Colon as keyword delimiter"
 msgid "Colon"
 msgstr "Kolon"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbDelimiter)
-#: webshortcuts/ikwsopts_ui.ui:230
+#: webshortcuts/ikwsopts_ui.ui:213
 #, kde-format
 msgctxt "Space as keyword delimiter"
 msgid "Space"
