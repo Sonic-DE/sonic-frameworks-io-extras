@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:51+0000\n"
+"POT-Creation-Date: 2026-05-20 00:44+0000\n"
 "PO-Revision-Date: 2022-10-19 21:51+0200\n"
 "Last-Translator: Mihkel Tõnnov <mihhkel@gmail.com>\n"
 "Language-Team: Estonian <>\n"
@@ -71,18 +71,12 @@ msgstr ""
 "Faili üleslaadimisel on selle laiendiks \"*.part\". Pärast täielikku "
 "üleslaadimist saab fail endale oma algse nime tagasi."
 
-#. i18n: ectx: label, entry (MinimumKeepSize), group (&lt;default&gt;)
-#: netpref/kioslave.kcfg:17
-#, kde-format
-msgid "The minimum file size for keeping aborted downloads"
-msgstr ""
-
 #: netpref/netpref.cpp:26
 #, kde-format
 msgid "Global Options"
 msgstr "Globaalsed valikud"
 
-#: netpref/netpref.cpp:31 netpref/netpref.cpp:70
+#: netpref/netpref.cpp:31 netpref/netpref.cpp:65
 #, kde-format
 msgid "Mark &partially uploaded files"
 msgstr "&Osaliselt üleslaaditud failide märkimine"
@@ -100,36 +94,17 @@ msgstr ""
 "osaliselt üleslaaditud failidel laiend \".part\". Laiend võetakse maha siis, "
 "kui üleslaadimine on edukalt lõpetatud.</p>"
 
-#: netpref/netpref.cpp:52
-#, fuzzy, kde-format
-#| msgid " byte"
-#| msgid_plural " bytes"
-msgctxt "@label:spinbox"
-msgid "%v byte"
-msgid_plural "%v bytes"
-msgstr[0] " bait"
-msgstr[1] " baiti"
-
-#: netpref/netpref.cpp:54
-#, kde-format
-msgctxt "@label:spinbox"
-msgid ""
-"If cancelled, automatically delete partially uploaded files smaller than:"
-msgstr ""
-"Tühistamise korral kustutatakse osaliselt üleslaaditud failid, mis on "
-"väiksemad kui"
-
-#: netpref/netpref.cpp:56
+#: netpref/netpref.cpp:51
 #, kde-format
 msgid "FTP Options"
 msgstr "FTP valikud"
 
-#: netpref/netpref.cpp:62
+#: netpref/netpref.cpp:57
 #, kde-format
 msgid "Enable passive &mode (PASV)"
 msgstr "Passiivse režiimi (PASV) luba&mine"
 
-#: netpref/netpref.cpp:64
+#: netpref/netpref.cpp:59
 #, kde-format
 msgid ""
 "Enables FTP's \"passive\" mode. This is required to allow FTP to work from "
@@ -138,7 +113,7 @@ msgstr ""
 "Lubab FTP passiivse režiimi. See on vajalik, et FTP töötaks tulemüüride "
 "tagant."
 
-#: netpref/netpref.cpp:72
+#: netpref/netpref.cpp:67
 #, kde-format
 msgid ""
 "<p>Marks partially uploaded FTP files.</p><p>When this option is enabled, "
@@ -546,7 +521,7 @@ msgid "Show the &value of the environment variables"
 msgstr "Keskkonnamuutujate &väärtuse näitamine"
 
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, autoDiscoverProxyRadioButton)
-#: proxy/kproxydlg.ui:600
+#: proxy/kproxydlg.ui:602
 #, fuzzy, kde-format
 #| msgid ""
 #| "<qt>\n"
@@ -576,20 +551,30 @@ msgstr ""
 "</qt>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, autoDiscoverProxyRadioButton)
-#: proxy/kproxydlg.ui:603
+#: proxy/kproxydlg.ui:605
 #, fuzzy, kde-format
 #| msgid "Detect proxy configuration automatically"
 msgid "&Detect proxy configuration automatically"
 msgstr "Puhverserveri seadistuse automaatne tuvastamine"
 
+#. i18n: ectx: property (contextualHelpText), widget (KContextualHelpButton, wpadHelpButton)
+#: proxy/kproxydlg.ui:615
+#, kde-format
+msgid ""
+"Automatic Configuration, also known as Web Proxy Auto-Discovery (WPAD), is "
+"almost never the correct configuration. Enabling it when it is not required "
+"may slow down network access and make your network less secure. Your network "
+"administrator will know whether enabling it is required."
+msgstr ""
+
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, proxyScriptUrlRequester)
-#: proxy/kproxydlg.ui:634
+#: proxy/kproxydlg.ui:661
 #, kde-format
 msgid "Enter the address for the proxy configuration script."
 msgstr "Sisesta siia puhverserveri seadistusteskripti aadress."
 
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, systemProxyRadioButton)
-#: proxy/kproxydlg.ui:658
+#: proxy/kproxydlg.ui:685
 #, kde-format
 msgid ""
 "<qt><p>Use proxy settings defined on the system.</p>\n"
@@ -615,21 +600,11 @@ msgstr ""
 "</qt>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, systemProxyRadioButton)
-#: proxy/kproxydlg.ui:661
+#: proxy/kproxydlg.ui:688
 #, fuzzy, kde-format
 #| msgid "Use system proxy configuration:"
 msgid "Use s&ystem proxy configuration:"
 msgstr "Kasutatakse süsteemset puhverserveri seadistust:"
-
-#. i18n: ectx: property (contextualHelpText), widget (KContextualHelpButton, wpadHelpButton)
-#: proxy/kproxydlg.ui:673
-#, kde-format
-msgid ""
-"Automatic Configuration, also known as Web Proxy Auto-Discovery (WPAD), is "
-"almost never the correct configuration. Enabling it when it is not required "
-"may slow down network access and make your network less secure. Your network "
-"administrator will know whether enabling it is required."
-msgstr ""
 
 #: proxy/wpad-detector/module.cpp:75
 #, kde-format
@@ -1218,6 +1193,22 @@ msgstr "Koo&ditabel:"
 #, kde-format
 msgid "Insert query placeholder"
 msgstr "Päringu kohatäitja lisamine"
+
+#, fuzzy
+#~| msgid " byte"
+#~| msgid_plural " bytes"
+#~ msgctxt "@label:spinbox"
+#~ msgid "%v byte"
+#~ msgid_plural "%v bytes"
+#~ msgstr[0] " bait"
+#~ msgstr[1] " baiti"
+
+#~ msgctxt "@label:spinbox"
+#~ msgid ""
+#~ "If cancelled, automatically delete partially uploaded files smaller than:"
+#~ msgstr ""
+#~ "Tühistamise korral kustutatakse osaliselt üleslaaditud failid, mis on "
+#~ "väiksemad kui"
 
 #~ msgid " days"
 #~ msgstr " päeva"

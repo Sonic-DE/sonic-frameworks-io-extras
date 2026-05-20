@@ -14,21 +14,21 @@
 # obsoleteman <tulliana@gmail.com>, 2008-2009.
 # obsoleteman <tulliana@gmail.com>, 2010,2012.
 # Volkan Gezer <volkangezer@gmail.com>, 2013-2014, 2015, 2017, 2021.
-# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025, 2026 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kio4\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:51+0000\n"
-"PO-Revision-Date: 2025-09-16 17:36+0300\n"
-"Last-Translator: Emir SARI <emir_sari@îcloud.com>\n"
+"POT-Creation-Date: 2026-05-20 00:44+0000\n"
+"PO-Revision-Date: 2026-05-02 18:52+0300\n"
+"Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.08.0\n"
+"X-Generator: Lokalize 25.12.3\n"
 
 #: ksaveioconfig.cpp:36
 #, kde-format
@@ -79,19 +79,12 @@ msgstr ""
 "Bir dosya karşıya yüklenirken uzantısı “.part” olur. Dosya tümüyle "
 "gönderildikten sonra gerçek adını alır."
 
-#. i18n: ectx: label, entry (MinimumKeepSize), group (&lt;default&gt;)
-#: netpref/kioslave.kcfg:17
-#, kde-format
-msgid "The minimum file size for keeping aborted downloads"
-msgstr ""
-"İptal edilen indirmelerin tutulması için gereken en küçük dosya büyüklüğü"
-
 #: netpref/netpref.cpp:26
 #, kde-format
 msgid "Global Options"
 msgstr "Genel Seçenekler"
 
-#: netpref/netpref.cpp:31 netpref/netpref.cpp:70
+#: netpref/netpref.cpp:31 netpref/netpref.cpp:65
 #, kde-format
 msgid "Mark &partially uploaded files"
 msgstr "Bir kısmı &karşıya yüklenmiş dosyaları imle"
@@ -108,33 +101,17 @@ msgstr ""
 "</p><p>Bu seçenek etkinleştirildiğinde, kısmen karşıya yüklenen dosyaların “."
 "part” uzantısı olur. Bu uzantı, aktarım tamamlandıktan sonra kaldırılır.</p>"
 
-#: netpref/netpref.cpp:52
-#, kde-format
-msgctxt "@label:spinbox"
-msgid "%v byte"
-msgid_plural "%v bytes"
-msgstr[0] "%v bayt"
-msgstr[1] "%v bayt"
-
-#: netpref/netpref.cpp:54
-#, kde-format
-msgctxt "@label:spinbox"
-msgid ""
-"If cancelled, automatically delete partially uploaded files smaller than:"
-msgstr ""
-"İptalse yüklenmiş ve şundan daha küçük olan dosyaları kendiliğinden sil:"
-
-#: netpref/netpref.cpp:56
+#: netpref/netpref.cpp:51
 #, kde-format
 msgid "FTP Options"
 msgstr "FTP Seçenekleri"
 
-#: netpref/netpref.cpp:62
+#: netpref/netpref.cpp:57
 #, kde-format
 msgid "Enable passive &mode (PASV)"
 msgstr "Pasif &kipi etkinleştir (PASV)"
 
-#: netpref/netpref.cpp:64
+#: netpref/netpref.cpp:59
 #, kde-format
 msgid ""
 "Enables FTP's \"passive\" mode. This is required to allow FTP to work from "
@@ -143,7 +120,7 @@ msgstr ""
 "FTP’nin “pasif” kipini etkinleştirir. FTP’nin güvenlik duvarı arkasından "
 "çalışmasına izin vermek için gereklidir."
 
-#: netpref/netpref.cpp:72
+#: netpref/netpref.cpp:67
 #, kde-format
 msgid ""
 "<p>Marks partially uploaded FTP files.</p><p>When this option is enabled, "
@@ -537,7 +514,7 @@ msgid "Show the &value of the environment variables"
 msgstr "Ç&evre değişkenlerinin değerini göster"
 
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, autoDiscoverProxyRadioButton)
-#: proxy/kproxydlg.ui:600
+#: proxy/kproxydlg.ui:602
 #, kde-format
 msgid ""
 "<qt>\n"
@@ -557,19 +534,34 @@ msgstr ""
 "</qt>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, autoDiscoverProxyRadioButton)
-#: proxy/kproxydlg.ui:603
+#: proxy/kproxydlg.ui:605
 #, kde-format
 msgid "&Detect proxy configuration automatically"
 msgstr "Vekil yapılandırmasını kendiliğinden &algıla"
 
+#. i18n: ectx: property (contextualHelpText), widget (KContextualHelpButton, wpadHelpButton)
+#: proxy/kproxydlg.ui:615
+#, kde-format
+msgid ""
+"Automatic Configuration, also known as Web Proxy Auto-Discovery (WPAD), is "
+"almost never the correct configuration. Enabling it when it is not required "
+"may slow down network access and make your network less secure. Your network "
+"administrator will know whether enabling it is required."
+msgstr ""
+"Web Vekilini Kendiliğinden Keşif (WPAD) olarak da bilinen Kendiliğinden "
+"Yapılandırma, genelde hiçbir zaman doğru yapılandırma değildir. Gerekli "
+"olmadığı zamanlarda onu etkinleştirmek, ağ erişiminizi yavaşlatabilir ve "
+"ağınızı daha az güvenli yapabilir. Ağ yöneticiniz, bunun ne zaman "
+"etkinleştirilmesi gerektiğini bilecektir."
+
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, proxyScriptUrlRequester)
-#: proxy/kproxydlg.ui:634
+#: proxy/kproxydlg.ui:661
 #, kde-format
 msgid "Enter the address for the proxy configuration script."
 msgstr "Vekil yapılandırma betiğinin adresini girin."
 
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, systemProxyRadioButton)
-#: proxy/kproxydlg.ui:658
+#: proxy/kproxydlg.ui:685
 #, kde-format
 msgid ""
 "<qt><p>Use proxy settings defined on the system.</p>\n"
@@ -596,25 +588,10 @@ msgstr ""
 "</qt>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, systemProxyRadioButton)
-#: proxy/kproxydlg.ui:661
+#: proxy/kproxydlg.ui:688
 #, kde-format
 msgid "Use s&ystem proxy configuration:"
 msgstr "S&istem vekil yapılandırmasını kullan:"
-
-#. i18n: ectx: property (contextualHelpText), widget (KContextualHelpButton, wpadHelpButton)
-#: proxy/kproxydlg.ui:673
-#, kde-format
-msgid ""
-"Automatic Configuration, also known as Web Proxy Auto-Discovery (WPAD), is "
-"almost never the correct configuration. Enabling it when it is not required "
-"may slow down network access and make your network less secure. Your network "
-"administrator will know whether enabling it is required."
-msgstr ""
-"Web Vekilini Kendiliğinden Keşif (WPAD) olarak da bilinen Kendiliğinden "
-"Yapılandırma, genelde hiçbir zaman doğru yapılandırma değildir. Gerekli "
-"olmadığı zamanlarda onu etkinleştirmek, ağ erişiminizi yavaşlatabilir ve "
-"ağınızı daha az güvenli yapabilir. Ağ yöneticiniz, bunun ne zaman "
-"etkinleştirilmesi gerektiğini bilecektir."
 
 #: proxy/wpad-detector/module.cpp:75
 #, kde-format
@@ -845,7 +822,7 @@ msgid ""
 "KDE</span>.</p></body></html>"
 msgstr ""
 "<html><head/><body><p>Web arama anahtar sözcüklerini etkinleştir veya devre "
-"dışı bırak.</p><p>Web anahtar arama sözcükleri, çevrimiçi veya sabit "
+"dışı bırak.</p><p>Web anahtar arama sözcükleri, çevrim içi veya sabit "
 "diskinizde yer alan bilgileri tez aramanızı veya onlara erişmenizi sağlar.</"
 "p><p>KDE, öntanımlı birçok Web arama anahtar sözcüğü ile gelir. Bu anahtar "
 "sözcüklerinden biri Google (TM) arama kısayoludur. Kullanabilmek için "
@@ -1014,7 +991,7 @@ msgid ""
 "The following keywords are already assigned. Please choose different ones.\n"
 "%1"
 msgstr ""
-"Aşağıdaki kısayollar halihazırda atanmış durumda. Lütfen başka kısayollar "
+"Aşağıdaki kısayollar hâlihazırda atanmış durumda. Lütfen başka kısayollar "
 "seçin:\n"
 "%1"
 
@@ -1157,6 +1134,22 @@ msgstr "&Karakter kümesi:"
 #, kde-format
 msgid "Insert query placeholder"
 msgstr "Sorgu yer tutucusu ekle"
+
+#~ msgid "The minimum file size for keeping aborted downloads"
+#~ msgstr ""
+#~ "İptal edilen indirmelerin tutulması için gereken en küçük dosya büyüklüğü"
+
+#~ msgctxt "@label:spinbox"
+#~ msgid "%v byte"
+#~ msgid_plural "%v bytes"
+#~ msgstr[0] "%v bayt"
+#~ msgstr[1] "%v bayt"
+
+#~ msgctxt "@label:spinbox"
+#~ msgid ""
+#~ "If cancelled, automatically delete partially uploaded files smaller than:"
+#~ msgstr ""
+#~ "İptalse yüklenmiş ve şundan daha küçük olan dosyaları kendiliğinden sil:"
 
 #~ msgid " days"
 #~ msgstr " gün"

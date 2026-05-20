@@ -15,7 +15,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:51+0000\n"
+"POT-Creation-Date: 2026-05-20 00:44+0000\n"
 "PO-Revision-Date: 2025-03-19 13:20+0100\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.gal>\n"
 "Language-Team: Proxecto Trasno (proxecto@trasno.gal)\n"
@@ -75,18 +75,12 @@ msgstr ""
 "Mentres se está a subir un ficheiro a súa extensión é «*.part». Cando se "
 "remata de subir renoméase co seu nome real."
 
-#. i18n: ectx: label, entry (MinimumKeepSize), group (&lt;default&gt;)
-#: netpref/kioslave.kcfg:17
-#, kde-format
-msgid "The minimum file size for keeping aborted downloads"
-msgstr ""
-
 #: netpref/netpref.cpp:26
 #, kde-format
 msgid "Global Options"
 msgstr "Opcións globais"
 
-#: netpref/netpref.cpp:31 netpref/netpref.cpp:70
+#: netpref/netpref.cpp:31 netpref/netpref.cpp:65
 #, kde-format
 msgid "Mark &partially uploaded files"
 msgstr "Marcar os ficheiros &parcialmente enviados"
@@ -104,34 +98,17 @@ msgstr ""
 "terán unha extensión «part». Esta extensión retirarase cando se remate a "
 "transferencia.</p>"
 
-#: netpref/netpref.cpp:52
-#, kde-format
-msgctxt "@label:spinbox"
-msgid "%v byte"
-msgid_plural "%v bytes"
-msgstr[0] "%v byte"
-msgstr[1] "%v bytes"
-
-#: netpref/netpref.cpp:54
-#, kde-format
-msgctxt "@label:spinbox"
-msgid ""
-"If cancelled, automatically delete partially uploaded files smaller than:"
-msgstr ""
-"Se se cancela, eliminar automaticamente os ficheiros enviados parcialmente "
-"cun tamaño inferior a:"
-
-#: netpref/netpref.cpp:56
+#: netpref/netpref.cpp:51
 #, kde-format
 msgid "FTP Options"
 msgstr "Opcións de FTP"
 
-#: netpref/netpref.cpp:62
+#: netpref/netpref.cpp:57
 #, kde-format
 msgid "Enable passive &mode (PASV)"
 msgstr "Activar o &modo pasivo (PASV)"
 
-#: netpref/netpref.cpp:64
+#: netpref/netpref.cpp:59
 #, kde-format
 msgid ""
 "Enables FTP's \"passive\" mode. This is required to allow FTP to work from "
@@ -140,7 +117,7 @@ msgstr ""
 "Activa o modo «pasivo» do FTP. Isto requírese para permitirlle a FTP "
 "funcionar a través de devasas."
 
-#: netpref/netpref.cpp:72
+#: netpref/netpref.cpp:67
 #, kde-format
 msgid ""
 "<p>Marks partially uploaded FTP files.</p><p>When this option is enabled, "
@@ -541,7 +518,7 @@ msgid "Show the &value of the environment variables"
 msgstr "Amosar o &valor das variábeis de contorno"
 
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, autoDiscoverProxyRadioButton)
-#: proxy/kproxydlg.ui:600
+#: proxy/kproxydlg.ui:602
 #, kde-format
 msgid ""
 "<qt>\n"
@@ -561,19 +538,33 @@ msgstr ""
 "</qt>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, autoDiscoverProxyRadioButton)
-#: proxy/kproxydlg.ui:603
+#: proxy/kproxydlg.ui:605
 #, kde-format
 msgid "&Detect proxy configuration automatically"
 msgstr "&Detectar automaticamente a configuración do mandatario."
 
+#. i18n: ectx: property (contextualHelpText), widget (KContextualHelpButton, wpadHelpButton)
+#: proxy/kproxydlg.ui:615
+#, kde-format
+msgid ""
+"Automatic Configuration, also known as Web Proxy Auto-Discovery (WPAD), is "
+"almost never the correct configuration. Enabling it when it is not required "
+"may slow down network access and make your network less secure. Your network "
+"administrator will know whether enabling it is required."
+msgstr ""
+"A configuración automática, tamén denominada descubrimento automático de "
+"mandatario web (WPAD), case nunha é a configuración correcta. Activala cando "
+"non a necesita pode enlentecer o seu acceso á rede e reducir a súa "
+"seguridade. Consulte á administración da súa rede se necesita activala."
+
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, proxyScriptUrlRequester)
-#: proxy/kproxydlg.ui:634
+#: proxy/kproxydlg.ui:661
 #, kde-format
 msgid "Enter the address for the proxy configuration script."
 msgstr "Escriba o enderezo do guión de configuración do mandatario."
 
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, systemProxyRadioButton)
-#: proxy/kproxydlg.ui:658
+#: proxy/kproxydlg.ui:685
 #, kde-format
 msgid ""
 "<qt><p>Use proxy settings defined on the system.</p>\n"
@@ -599,24 +590,10 @@ msgstr ""
 "</qt>"
 
 #. i18n: ectx: property (text), widget (QRadioButton, systemProxyRadioButton)
-#: proxy/kproxydlg.ui:661
+#: proxy/kproxydlg.ui:688
 #, kde-format
 msgid "Use s&ystem proxy configuration:"
 msgstr "Usar a configuración do mandatario do s&istema:"
-
-#. i18n: ectx: property (contextualHelpText), widget (KContextualHelpButton, wpadHelpButton)
-#: proxy/kproxydlg.ui:673
-#, kde-format
-msgid ""
-"Automatic Configuration, also known as Web Proxy Auto-Discovery (WPAD), is "
-"almost never the correct configuration. Enabling it when it is not required "
-"may slow down network access and make your network less secure. Your network "
-"administrator will know whether enabling it is required."
-msgstr ""
-"A configuración automática, tamén denominada descubrimento automático de "
-"mandatario web (WPAD), case nunha é a configuración correcta. Activala cando "
-"non a necesita pode enlentecer o seu acceso á rede e reducir a súa "
-"seguridade. Consulte á administración da súa rede se necesita activala."
 
 #: proxy/wpad-detector/module.cpp:75
 #, kde-format
@@ -1154,6 +1131,19 @@ msgstr "&Conxunto de caracteres:"
 #, kde-format
 msgid "Insert query placeholder"
 msgstr "Insire unha marca de posición de consulta."
+
+#~ msgctxt "@label:spinbox"
+#~ msgid "%v byte"
+#~ msgid_plural "%v bytes"
+#~ msgstr[0] "%v byte"
+#~ msgstr[1] "%v bytes"
+
+#~ msgctxt "@label:spinbox"
+#~ msgid ""
+#~ "If cancelled, automatically delete partially uploaded files smaller than:"
+#~ msgstr ""
+#~ "Se se cancela, eliminar automaticamente os ficheiros enviados "
+#~ "parcialmente cun tamaño inferior a:"
 
 #~ msgid " days"
 #~ msgstr " días"

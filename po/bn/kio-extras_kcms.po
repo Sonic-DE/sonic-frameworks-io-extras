@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-11-17 11:51+0000\n"
+"POT-Creation-Date: 2026-05-20 00:44+0000\n"
 "PO-Revision-Date: 2009-01-09 21:08-0800\n"
 "Last-Translator: Deepayan Sarkar <deepayan.sarkar@gmail.com>\n"
 "Language-Team: en_US <kde-translation@bengalinux.org>\n"
@@ -66,18 +66,12 @@ msgid ""
 "uploaded it is renamed to its real name."
 msgstr ""
 
-#. i18n: ectx: label, entry (MinimumKeepSize), group (&lt;default&gt;)
-#: netpref/kioslave.kcfg:17
-#, kde-format
-msgid "The minimum file size for keeping aborted downloads"
-msgstr ""
-
 #: netpref/netpref.cpp:26
 #, fuzzy, kde-format
 msgid "Global Options"
 msgstr "প্রক্রিয়া"
 
-#: netpref/netpref.cpp:31 netpref/netpref.cpp:70
+#: netpref/netpref.cpp:31 netpref/netpref.cpp:65
 #, kde-format
 msgid "Mark &partially uploaded files"
 msgstr "অসম্পূর্ণ ফাইল চিহ্নি&ত করো"
@@ -98,32 +92,17 @@ msgstr ""
 "আংশিক আপলোড করা হয়েছে, সেগুলির নামের শেষে \".part\" যোগ করা হবে। আপলোড করা    "
 "সম্পূর্ণ হলে নামের এই অংশটি মুছে ফেলা হবে।</p>"
 
-#: netpref/netpref.cpp:52
-#, kde-format
-msgctxt "@label:spinbox"
-msgid "%v byte"
-msgid_plural "%v bytes"
-msgstr[0] ""
-msgstr[1] ""
-
-#: netpref/netpref.cpp:54
-#, kde-format
-msgctxt "@label:spinbox"
-msgid ""
-"If cancelled, automatically delete partially uploaded files smaller than:"
-msgstr ""
-
-#: netpref/netpref.cpp:56
+#: netpref/netpref.cpp:51
 #, kde-format
 msgid "FTP Options"
 msgstr "এফ.টি.পি. অপশন"
 
-#: netpref/netpref.cpp:62
+#: netpref/netpref.cpp:57
 #, kde-format
 msgid "Enable passive &mode (PASV)"
 msgstr "পাসি&ভ (passive) মোড (PASV) সমর্থন করো"
 
-#: netpref/netpref.cpp:64
+#: netpref/netpref.cpp:59
 #, kde-format
 msgid ""
 "Enables FTP's \"passive\" mode. This is required to allow FTP to work from "
@@ -132,7 +111,7 @@ msgstr ""
 "এফ.টি.পি-র পাসিভ (passive) মোড সক্রিয় করে। ফায়ারওয়াল-এর পিছন থেকে  এফ.টি.পি "
 "কাজ করতে হলে এটি প্রয়োজন।"
 
-#: netpref/netpref.cpp:72
+#: netpref/netpref.cpp:67
 #, kde-format
 msgid ""
 "<p>Marks partially uploaded FTP files.</p><p>When this option is enabled, "
@@ -478,7 +457,7 @@ msgid "Show the &value of the environment variables"
 msgstr "এনভায়রনমেন্ট ভেরিয়েবল-গুলির মা&ন প্রদর্শন করো"
 
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, autoDiscoverProxyRadioButton)
-#: proxy/kproxydlg.ui:600
+#: proxy/kproxydlg.ui:602
 #, kde-format
 msgid ""
 "<qt>\n"
@@ -491,20 +470,30 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, autoDiscoverProxyRadioButton)
-#: proxy/kproxydlg.ui:603
+#: proxy/kproxydlg.ui:605
 #, fuzzy, kde-format
 #| msgid "U&se proxy configuration URL:"
 msgid "&Detect proxy configuration automatically"
 msgstr "নিম্নোক্ত প্রক্সি কনফিগারেশন ইউ-আর-এল ব্যবহা&র করো:"
 
+#. i18n: ectx: property (contextualHelpText), widget (KContextualHelpButton, wpadHelpButton)
+#: proxy/kproxydlg.ui:615
+#, kde-format
+msgid ""
+"Automatic Configuration, also known as Web Proxy Auto-Discovery (WPAD), is "
+"almost never the correct configuration. Enabling it when it is not required "
+"may slow down network access and make your network less secure. Your network "
+"administrator will know whether enabling it is required."
+msgstr ""
+
 #. i18n: ectx: property (whatsThis), widget (KUrlRequester, proxyScriptUrlRequester)
-#: proxy/kproxydlg.ui:634
+#: proxy/kproxydlg.ui:661
 #, kde-format
 msgid "Enter the address for the proxy configuration script."
 msgstr "প্রক্সি কনফিগারেশন স্ক্রিপ্ট-এর ঠিকানা লিখুন।"
 
 #. i18n: ectx: property (whatsThis), widget (QRadioButton, systemProxyRadioButton)
-#: proxy/kproxydlg.ui:658
+#: proxy/kproxydlg.ui:685
 #, kde-format
 msgid ""
 "<qt><p>Use proxy settings defined on the system.</p>\n"
@@ -520,21 +509,11 @@ msgid ""
 msgstr ""
 
 #. i18n: ectx: property (text), widget (QRadioButton, systemProxyRadioButton)
-#: proxy/kproxydlg.ui:661
+#: proxy/kproxydlg.ui:688
 #, fuzzy, kde-format
 #| msgid "U&se proxy configuration URL:"
 msgid "Use s&ystem proxy configuration:"
 msgstr "নিম্নোক্ত প্রক্সি কনফিগারেশন ইউ-আর-এল ব্যবহা&র করো:"
-
-#. i18n: ectx: property (contextualHelpText), widget (KContextualHelpButton, wpadHelpButton)
-#: proxy/kproxydlg.ui:673
-#, kde-format
-msgid ""
-"Automatic Configuration, also known as Web Proxy Auto-Discovery (WPAD), is "
-"almost never the correct configuration. Enabling it when it is not required "
-"may slow down network access and make your network less secure. Your network "
-"administrator will know whether enabling it is required."
-msgstr ""
 
 #: proxy/wpad-detector/module.cpp:75
 #, kde-format
