@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kio-extras\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2025-12-03 00:43+0000\n"
+"POT-Creation-Date: 2026-05-22 00:43+0000\n"
 "PO-Revision-Date: 2022-12-13 02:06+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -238,7 +238,7 @@ msgstr "%1-სთან მიერთება წარმატებულ�
 msgid "Invalid sftp context"
 msgstr "SFTP-ის არასწორი კონტექსტი"
 
-#: kio_sftp.cpp:1618
+#: kio_sftp.cpp:1619
 #, kde-format
 msgid ""
 "Could not change permissions for\n"
