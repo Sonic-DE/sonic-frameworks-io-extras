@@ -942,7 +942,3 @@ msgstr ""
 #, kde-format
 msgid "Insert query placeholder"
 msgstr ""
-
-#, fuzzy
-#~ msgid "Search for Web search keywords"
-#~ msgstr "Standárda beassansátni:"
