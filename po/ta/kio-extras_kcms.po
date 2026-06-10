@@ -9,13 +9,13 @@
 # Vasee Vaseeharan <vasee@ieee.org>, 2004.
 # Ambalam <tamilpc@ambalam.com>, 2004.
 # root <root@localhost.localdomain>, 2004.
-# SPDX-FileCopyrightText: 2020, 2021, 2022, 2023, 2024, 2025 Kishore G <kishore96@gmail.com>
+# SPDX-FileCopyrightText: 2020-2026 Kishore G <kishore96@gmail.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: kcmkio\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2026-05-20 00:44+0000\n"
-"PO-Revision-Date: 2025-09-21 13:29+0530\n"
+"POT-Creation-Date: 2026-05-30 00:44+0000\n"
+"PO-Revision-Date: 2026-06-09 21:55+0530\n"
 "Last-Translator: Kishore G <kishore96@gmail.com>\n"
 "Language-Team: Tamil <kde-l10n-ta@kde.org>\n"
 "Language: ta\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 25.08.1\n"
+"X-Generator: Lokalize 26.04.1\n"
 
 #: ksaveioconfig.cpp:36
 #, kde-format
@@ -746,19 +746,19 @@ msgstr ""
 msgid "Full trash:"
 msgstr "அகற்றிடம் முழுமையடையும்போது:"
 
-#: webshortcuts/ikwsopts.cpp:41
+#: webshortcuts/ikwsopts.cpp:42
 #, kde-format
 msgctxt "@title:column Name label from web search keyword column"
 msgid "Name"
 msgstr "பெயர்"
 
-#: webshortcuts/ikwsopts.cpp:43
+#: webshortcuts/ikwsopts.cpp:44
 #, kde-format
 msgctxt "@title:column"
 msgid "Keywords"
 msgstr "முதன்மைச்சொற்கள்"
 
-#: webshortcuts/ikwsopts.cpp:45
+#: webshortcuts/ikwsopts.cpp:46
 #, kde-format
 msgctxt "@title:column"
 msgid "Preferred"
@@ -767,45 +767,44 @@ msgstr "முதன்மையானது"
 #: webshortcuts/ikwsopts.cpp:104
 #, kde-kuit-format
 msgctxt "@info:tooltip"
-msgid ""
-"Check this box to select the highlighted Web search keyword as preferred.<nl/"
-">Preferred Web search keywords are used in places where only a few select "
-"keywords can be shown at one time."
-msgstr ""
-"தேர்ந்தெடுத்த முதன்மைச்சொல்லை முதன்மையானதாக குறிக்க இந்த தேர்வுப்பெட்டியை குறிக்கவும்.<nl/"
-"> ஒருசில முதன்மைச்சொற்களையே காட்டக்கூடிய இடங்களில் முதன்மையான முதன்மைச்சொற்கள் "
-"பயன்படுத்தப்படும்."
+msgid "Check to select this web search keyword as preferred."
+msgstr "இந்த முதன்மைச்சொல்லை முதன்மையானதாக குறிக்கலாம்."
 
-#: webshortcuts/ikwsopts.cpp:205
+#: webshortcuts/ikwsopts.cpp:224
 #, kde-format
 msgctxt "@item:inlistbox No default web search keyword"
 msgid "None"
 msgstr "ஏதுமில்லை"
 
-#: webshortcuts/ikwsopts.cpp:249
+#: webshortcuts/ikwsopts.cpp:269
 #, kde-format
 msgid "Search F&ilters"
 msgstr "தேடுதல் &வடிகட்டிகள்"
+
+#: webshortcuts/ikwsopts.cpp:299
+#, kde-kuit-format
+msgctxt "@info:whatsthis"
+msgid ""
+"<para>Web search keywords allow you to quickly search or look up words on "
+"the Internet. They work in Plasma's <application>KRunner</application> "
+"search, <application>Konqueror</application>'s address bar, and in any other "
+"applications that support them. For example, to search for information about "
+"the KDE project using the Google search engine, you can simply type "
+"<icode>gg:KDE</icode> or <icode>google:KDE</icode>.</para>"
+msgstr ""
+"<para>இணையத்தேடல்களை எளிதில் தூண்ட இணையத் தேடல் முதன்மைச்சொற்களை பயன்படுத்தலாம். அவற்றை "
+"<application>கேரன்னர்</application> தேடலிலும், <application>கான்கொரர்</"
+"application> தனின் முகவரிப்பட்டையிலும், மேலும் சில செயலிகளிலும் பயன்படுத்தலாம். "
+"எடுத்துக்காட்டாக, KDE பற்றிய விவரங்களை கூகுளில் தேட,<icode>gg:KDE</icode> அல்லது "
+"<icode>google:KDE</icode> என்பதைப் பயன்படுத்தலாம்.</para>"
 
 #. i18n: ectx: property (toolTip), widget (QCheckBox, cbEnableShortcuts)
 #: webshortcuts/ikwsopts_ui.ui:17
 #, kde-format
 msgid ""
-"<html><head/><body><p>Enable or disable Web search keywords. </p><p>Web "
-"search keywords allow you to quickly access or search for information "
-"located online or on your hard drive. </p><p>KDE comes with many predefined "
-"keywords. One such keyword can be used to perform a the Google (TM) search; "
-"to use it, you simply type the keyword 'gg' followed by the keyword "
-"delimiter and the search term, e.g. <span style=\" font-weight:600;\">gg:"
-"KDE</span>.</p></body></html>"
-msgstr ""
-"<html><head/><body><p>இணையத் தேடல் முதன்மைச்சொற்களை இயக்குங்கள் அல்லது முடக்குங்கள். </"
-"p><p> இணையத்திலோ உங்கள் வட்டிலொ இருக்கும் தகவல்களை நீங்கள் எளிதில் தேட இணையத் தேடல் "
-"முதன்மைச்சொற்கள் உதவும். </p><p> கே.டீ.யீ.யில் பல முதன்மைச்சொற்கள் இயல்பாகவே "
-"அமைக்கப்பட்டிருக்கும். இவ்வாறு உள்ள ஒரு முதன்மைச்சொல்லைக் கொண்டு நீங்கள் கூகுளில் தேடலாம்; "
-"அதைப் பயன்படுத்த, 'gg' என்று உள்ளிட்டு, அதற்குப் பிறகு வரம்புக்குறி மற்றும் வினாவை "
-"உள்ளிடலாம், எ.கா. <span style=\" font-weight:600;\">gg:KDE</span>.</p></body></"
-"html>"
+"Check to recognise and use the web search keywords in applications that can "
+"use them"
+msgstr "ஆதரிக்கும் செயலிகளில் இணையத் தேடல் முதன்மைச்சொற்களை பயன்படுத்த வேண்டுமா"
 
 #. i18n: ectx: property (text), widget (QCheckBox, cbEnableShortcuts)
 #: webshortcuts/ikwsopts_ui.ui:20
@@ -813,122 +812,117 @@ msgstr ""
 msgid "&Enable Web search keywords"
 msgstr "&இணையத் தேடல் முதன்மைச்சொற்களை இயக்கு"
 
+#. i18n: ectx: property (text), widget (QLabel, lbQuickHelp)
+#: webshortcuts/ikwsopts_ui.ui:36
+#, kde-format
+msgid "<a href=\"whatsthis\">How do these work?</a>"
+msgstr "<a href=\"whatsthis\">இவற்றை எப்படி பயன்படுத்துவது?</a>"
+
+#. i18n: ectx: property (toolTip), widget (QCheckBox, cbUseSelectedShortcutsOnly)
+#: webshortcuts/ikwsopts_ui.ui:52
+#, kde-format
+msgid ""
+"<p>Check to only use the preferred web search keywords, as selected in the "
+"list below, where necessary.</p><p>If this is checked, then applications "
+"that can only show a limited number of search keywords (for example, "
+"Konqueror when text on a page is selected) will only show the preferred "
+"keywords.</p>"
+msgstr ""
+"<p>முதன்மையான முதன்மைச்சொற்களை மட்டும் பயன்படுத்த இதைக் குறிக்கவும்.</p><p>இது "
+"குறிக்கப்பட்டிருந்தால், சில தேர்வுகளையே காட்டக்கூடிய செயலிகள் (எ.கா. கான்கொரரில் உரையைத் "
+"தேர்ந்தெடுத்துள்ளபோது) முதன்மையானவற்றை மட்டும் காட்டும்.</p>"
+
 #. i18n: ectx: property (text), widget (QCheckBox, cbUseSelectedShortcutsOnly)
-#: webshortcuts/ikwsopts_ui.ui:30
+#: webshortcuts/ikwsopts_ui.ui:55
 #, kde-format
 msgid "&Use preferred keywords only"
 msgstr "முதன்மையான முதன்மைச்சொற்களை மட்டும் &பயன்படுத்து"
 
 #. i18n: ectx: property (placeholderText), widget (QLineEdit, searchLineEdit)
-#: webshortcuts/ikwsopts_ui.ui:37
+#: webshortcuts/ikwsopts_ui.ui:62
 #, kde-format
-msgid "Search for Web search keywords"
-msgstr "இணையத் தேடல் முதன்மைச்சொற்களைத் தேடுங்கள்"
+msgid "Search..."
+msgstr "தேடு..."
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, pbNew)
-#: webshortcuts/ikwsopts_ui.ui:71
+#: webshortcuts/ikwsopts_ui.ui:96
 #, kde-format
 msgid "Add a new Web search keyword"
 msgstr "புதிய இணையத் தேடல் முதன்மைச்சொல்லை சேர்"
 
 #. i18n: ectx: property (text), widget (QPushButton, pbNew)
-#: webshortcuts/ikwsopts_ui.ui:74
+#: webshortcuts/ikwsopts_ui.ui:99
 #, kde-format
 msgid "&New…"
 msgstr "&புதியது…"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, pbChange)
-#: webshortcuts/ikwsopts_ui.ui:84
+#: webshortcuts/ikwsopts_ui.ui:109
 #, kde-format
 msgid "Modify the highlighted Web search keyword"
 msgstr "குறிக்கப்பட்ட இணையத் தேடல் முதன்மைச்சொல்லை திருத்து"
 
 #. i18n: ectx: property (text), widget (QPushButton, pbChange)
-#: webshortcuts/ikwsopts_ui.ui:87
+#: webshortcuts/ikwsopts_ui.ui:112
 #, kde-format
 msgid "Ed&it…"
 msgstr "&திருத்து…"
 
 #. i18n: ectx: property (toolTip), widget (QPushButton, pbDelete)
-#: webshortcuts/ikwsopts_ui.ui:97
+#: webshortcuts/ikwsopts_ui.ui:122
 #, kde-format
 msgid "Delete the highlighted Web search keyword"
 msgstr "குறிக்கப்பட்ட இணையத் தேடல் முதன்மைச்சொல்லை நீக்கு"
 
 #. i18n: ectx: property (text), widget (QPushButton, pbDelete)
-#: webshortcuts/ikwsopts_ui.ui:100
+#: webshortcuts/ikwsopts_ui.ui:125
 #, kde-format
 msgid "De&lete"
 msgstr "&நீக்கு"
 
-#. i18n: ectx: property (whatsThis), widget (QLabel, lbDefaultEngine)
-#: webshortcuts/ikwsopts_ui.ui:138
-#, kde-format
-msgid ""
-"<qt>\n"
-"Select the search engine to use for input boxes that provide automatic "
-"lookup services when you type in normal words and phrases instead of a URL. "
-"To disable this feature select <b>None</b> from the list.\n"
-"</qt>"
-msgstr ""
-"<qt>\n"
-"நீங்கள் ஒரு முகவரிக்கு பதிலாக சாதாரன சொற்களையே உள்ளிடும்போது அவற்றை தானாக தேடும் "
-"உள்ளீட்டு பெட்டிகளால் பயன்படுத்தப்படும் தேடல் சேவையை தேர்வு செய்யுங்கள். இந்த அம்சத்தை முடக்க, "
-"பட்டியலிலிருந்து <b>ஏதுமில்லை</b> என்பதை தேர்ந்தெடுங்கள்.\n"
-"</qt>"
-
 #. i18n: ectx: property (text), widget (QLabel, lbDefaultEngine)
-#: webshortcuts/ikwsopts_ui.ui:141
+#: webshortcuts/ikwsopts_ui.ui:161
 #, kde-format
 msgid "Default Web &search keyword:"
 msgstr "இயல்பிருப்பு இணையத் &தேடல் முதன்மைச்சொல்:"
 
-#. i18n: ectx: property (whatsThis), widget (QComboBox, cmbDefaultEngine)
-#: webshortcuts/ikwsopts_ui.ui:166
+#. i18n: ectx: property (toolTip), widget (QComboBox, cmbDefaultEngine)
+#: webshortcuts/ikwsopts_ui.ui:186
 #, kde-format
 msgid ""
-"<html><head/><body><p>Select a default Web search keyword. </p><p>This "
-"allows applications to automatically convert the typed word or phrase to Web "
-"search keyword queries when they cannot be filtered into a proper URL. </"
-"p><p>To disable this functionality select <span style=\" font-weight:600;"
-"\">None</span> from the list. </p></body></html>"
+"<p>Select a default web search keyword.</p><p>This may be used by "
+"applications which automatically search if input cannot be recognised, for "
+"example in Konqueror's address bar.  This keyword will be used for the "
+"search. To disable this feature select <tt>(None)</tt> from the list.</p>"
 msgstr ""
-"<html><head/><body><p>இயல்பிருப்பு இணையத் தேடல் முதன்மைச்சொல்லை தேர்வு செய்யுங்கள். </"
-"p><p> உள்ளிட்ட சொற்றொடர் ஒரு முறையான முகவரியாக இல்லாத பட்சத்தில், அதை தானாக ஒரு "
-"முறையான வினாவாக செயலிகள் மாற்ற இது உதவும். </p><p>இந்த அம்சத்தை முடக்க, "
-"பட்டியலிலிருந்து <span style=\" font-weight:600;\">ஏதுமில்லை</span> என்பதை தேர்வு "
-"செய்யுங்கள். </p></body></html>"
-
-#. i18n: ectx: property (whatsThis), widget (QLabel, lbDelimiter)
-#: webshortcuts/ikwsopts_ui.ui:182
-#, kde-format
-msgid ""
-"Choose the delimiter that separates the keyword from the phrase or word to "
-"be searched."
-msgstr ""
-"முதன்மைச்சொல்லையும், தேட வேண்டிய சொற்றொடரையும் பிரிக்கும் வரம்புக்குறியைத் தேர்ந்தெடுங்கள்."
+"<p>இயல்பிருப்பு இணையத் தேடல் முதன்மைச்சொல்லைத் தேர்ந்தெடுக்கவும்.</p><p>வேறு எந்த "
+"செயலுக்கும் பொருந்தாத உள்ளீட்டுகளுக்கு சில செயலிகள் (எ.கா. கான்கொரர்) இதைப் "
+"பயன்படுத்தலாம். இந்த அம்சத்தை முடக்க <tt>(ஏதுமில்லை)</tt> என்பதைத் தேர்ந்தெடுக்கவும்.</p>"
 
 #. i18n: ectx: property (text), widget (QLabel, lbDelimiter)
-#: webshortcuts/ikwsopts_ui.ui:185
+#: webshortcuts/ikwsopts_ui.ui:202
 #, kde-format
 msgid "&Keyword delimiter:"
 msgstr "&முதன்மைச்சொல்லுக்கான வரம்புக்குறி:"
 
 #. i18n: ectx: property (toolTip), widget (QComboBox, cmbDelimiter)
-#: webshortcuts/ikwsopts_ui.ui:204
+#: webshortcuts/ikwsopts_ui.ui:221
 #, kde-format
-msgid "Choose a delimiter to mark the Web search keyword."
-msgstr "முதன்மைச்சொல்லை குறிப்பதற்கு பயன்படும் வரம்புக்குறியை தேர்ந்தெடுங்கள்."
+msgid ""
+"Choose the delimiter to separate the keyword from the phrase or word to be "
+"searched."
+msgstr ""
+"முதன்மைச்சொல்லையும், தேட வேண்டிய சொற்றொடரையும் பிரிக்கும் வரம்புக்குறியைத் தேர்ந்தெடுக்கவும்."
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbDelimiter)
-#: webshortcuts/ikwsopts_ui.ui:208
+#: webshortcuts/ikwsopts_ui.ui:225
 #, kde-format
 msgctxt "Colon as keyword delimiter"
 msgid "Colon"
 msgstr "முக்கால்புள்ளி"
 
 #. i18n: ectx: property (text), item, widget (QComboBox, cmbDelimiter)
-#: webshortcuts/ikwsopts_ui.ui:213
+#: webshortcuts/ikwsopts_ui.ui:230
 #, kde-format
 msgctxt "Space as keyword delimiter"
 msgid "Space"
@@ -1114,6 +1108,62 @@ msgstr "&உருத்தொகுதி:"
 #, kde-format
 msgid "Insert query placeholder"
 msgstr "கேள்விக்கான கொள்ளிடத்தை உள்ளிடு"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid ""
+#~ "Check this box to select the highlighted Web search keyword as preferred."
+#~ "<nl/>Preferred Web search keywords are used in places where only a few "
+#~ "select keywords can be shown at one time."
+#~ msgstr ""
+#~ "தேர்ந்தெடுத்த முதன்மைச்சொல்லை முதன்மையானதாக குறிக்க இந்த தேர்வுப்பெட்டியை குறிக்கவும்."
+#~ "<nl/> ஒருசில முதன்மைச்சொற்களையே காட்டக்கூடிய இடங்களில் முதன்மையான முதன்மைச்சொற்கள் "
+#~ "பயன்படுத்தப்படும்."
+
+#~ msgid ""
+#~ "<html><head/><body><p>Enable or disable Web search keywords. </p><p>Web "
+#~ "search keywords allow you to quickly access or search for information "
+#~ "located online or on your hard drive. </p><p>KDE comes with many "
+#~ "predefined keywords. One such keyword can be used to perform a the Google "
+#~ "(TM) search; to use it, you simply type the keyword 'gg' followed by the "
+#~ "keyword delimiter and the search term, e.g. <span style=\" font-"
+#~ "weight:600;\">gg:KDE</span>.</p></body></html>"
+#~ msgstr ""
+#~ "<html><head/><body><p>இணையத் தேடல் முதன்மைச்சொற்களை இயக்குங்கள் அல்லது முடக்குங்கள். "
+#~ "</p><p> இணையத்திலோ உங்கள் வட்டிலொ இருக்கும் தகவல்களை நீங்கள் எளிதில் தேட இணையத் தேடல் "
+#~ "முதன்மைச்சொற்கள் உதவும். </p><p> கே.டீ.யீ.யில் பல முதன்மைச்சொற்கள் இயல்பாகவே "
+#~ "அமைக்கப்பட்டிருக்கும். இவ்வாறு உள்ள ஒரு முதன்மைச்சொல்லைக் கொண்டு நீங்கள் கூகுளில் தேடலாம்; "
+#~ "அதைப் பயன்படுத்த, 'gg' என்று உள்ளிட்டு, அதற்குப் பிறகு வரம்புக்குறி மற்றும் வினாவை "
+#~ "உள்ளிடலாம், எ.கா. <span style=\" font-weight:600;\">gg:KDE</span>.</p></"
+#~ "body></html>"
+
+#~ msgid "Search for Web search keywords"
+#~ msgstr "இணையத் தேடல் முதன்மைச்சொற்களைத் தேடுங்கள்"
+
+#~ msgid ""
+#~ "<qt>\n"
+#~ "Select the search engine to use for input boxes that provide automatic "
+#~ "lookup services when you type in normal words and phrases instead of a "
+#~ "URL. To disable this feature select <b>None</b> from the list.\n"
+#~ "</qt>"
+#~ msgstr ""
+#~ "<qt>\n"
+#~ "நீங்கள் ஒரு முகவரிக்கு பதிலாக சாதாரன சொற்களையே உள்ளிடும்போது அவற்றை தானாக தேடும் "
+#~ "உள்ளீட்டு பெட்டிகளால் பயன்படுத்தப்படும் தேடல் சேவையை தேர்வு செய்யுங்கள். இந்த அம்சத்தை "
+#~ "முடக்க, பட்டியலிலிருந்து <b>ஏதுமில்லை</b> என்பதை தேர்ந்தெடுங்கள்.\n"
+#~ "</qt>"
+
+#~ msgid ""
+#~ "<html><head/><body><p>Select a default Web search keyword. </p><p>This "
+#~ "allows applications to automatically convert the typed word or phrase to "
+#~ "Web search keyword queries when they cannot be filtered into a proper "
+#~ "URL. </p><p>To disable this functionality select <span style=\" font-"
+#~ "weight:600;\">None</span> from the list. </p></body></html>"
+#~ msgstr ""
+#~ "<html><head/><body><p>இயல்பிருப்பு இணையத் தேடல் முதன்மைச்சொல்லை தேர்வு செய்யுங்கள். "
+#~ "</p><p> உள்ளிட்ட சொற்றொடர் ஒரு முறையான முகவரியாக இல்லாத பட்சத்தில், அதை தானாக ஒரு "
+#~ "முறையான வினாவாக செயலிகள் மாற்ற இது உதவும். </p><p>இந்த அம்சத்தை முடக்க, "
+#~ "பட்டியலிலிருந்து <span style=\" font-weight:600;\">ஏதுமில்லை</span> என்பதை "
+#~ "தேர்வு செய்யுங்கள். </p></body></html>"
 
 #~ msgid "The minimum file size for keeping aborted downloads"
 #~ msgstr "தோல்வியுற்ற பதிவிறக்கங்கள் இந்த அளவைவிட பெரிதாக இருந்தால் வைத்திரு"
@@ -1454,9 +1504,6 @@ msgstr "கேள்விக்கான கொள்ளிடத்தை உ�
 
 #~ msgid "Search interactively for domains"
 #~ msgstr "ஆள்களங்களுக்கான ஊடாடும் தேடல்"
-
-#~ msgid "Search..."
-#~ msgstr "தேடு..."
 
 #~ msgid ""
 #~ "<qt>\n"
