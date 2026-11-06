@@ -19,4 +19,4 @@ if(APPLE)
 endif(APPLE)
 
 kcmutils_generate_desktop_file(kcm_trash)
-install(TARGETS kcm_trash DESTINATION ${KDE_INSTALL_PLUGINDIR})
+install(TARGETS kcm_trash DESTINATION ${KDE_INSTALL_PLUGINDIR}/plasma/kcms/systemsettings_qwidgets)
